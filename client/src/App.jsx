@@ -3,11 +3,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import { Outlet } from 'react-router-dom';
+
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Write from "./pages/Write";
 import Home from "./pages/Home";
 import Single from "./pages/Single";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./style.scss";
 
 // 🔎 Utilizing <Outlet> for dry code! https://reactrouter.com/en/main/components/outlet
