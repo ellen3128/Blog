@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+
 .app {
     .container {
         // Login & Register
@@ -44,6 +44,17 @@ body {
                 background-color: teal;
                 cursor: pointer;
                 color: white;
+            }
+
+            span {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            p {
+                font-size: 12px;
+                color: red;
+                text-align: center;
             }
         }
     }
