@@ -1,8 +1,14 @@
 import React from 'react'
+import Logo from '../img/logo.png';
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      <img src={Logo} alt="" />
+      <span>
+        <p><b>Copyright 2023 Ellen Park ✨</b></p>
+      </span>
+    </footer>
   )
 }
 

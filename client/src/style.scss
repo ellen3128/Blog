@@ -1,4 +1,4 @@
-$lightGreen: #b9e7e7;
+$lightGreen: rgba(248, 194, 176, 0.526);
 
 body {
   margin: 0;
@@ -71,7 +71,7 @@ a {
     }
   }
 
-  //NAVBAR
+//NAVBAR
 
   .navbar {
     .container {
@@ -114,11 +114,26 @@ a {
             height: 48px;
             color: teal;
             background-color: white;
-            border: 1px solid teal;
-            font-weight: 600;
+            border: 1px solid;
+            font-weight: 500;
           }
         }
       }
+    }
+  }
+
+//Footer
+
+  footer {
+    margin-top: 100px;
+    padding: 5px;
+    background-color: $lightGreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    img {
+      height: 80px;
     }
   }
 }
