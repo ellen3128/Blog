@@ -8,6 +8,7 @@ import Login from "./pages/Login";
 import Write from "./pages/Write";
 import Home from "./pages/Home";
 import Single from "./pages/Single";
+import "./style.scss";
 
 // 🔎 Utilizing <Outlet> for dry code! https://reactrouter.com/en/main/components/outlet
 
