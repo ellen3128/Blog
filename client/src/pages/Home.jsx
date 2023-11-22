@@ -43,7 +43,6 @@ const Home = () => {
                 </Link>
                 <p> {post.desc} </p>
                 <button>Read More</button>
-              
             </div>
           </div>
         ))}

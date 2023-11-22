@@ -1,4 +1,4 @@
-$lightGreen: rgba(248, 194, 176, 0.526);
+$lightPink: rgba(248, 194, 176, 0.526);
 
 body {
   margin: 0;
@@ -10,29 +10,33 @@ a {
   color: inherit;
 }
 
+//APP ----------------------------------------------------------------
+
 .app {
   display: flex;
   justify-content: center;
+
   .container {
     width: 1024px;
-    // Login & Register
+
+    //LOGIN & REGISTER ----------------------------------------------------------------
 
     .link {
       text-decoration: none;
       color: inherit;
     }
+
     .auth {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
-      background-color: $lightGreen;
+      background-color: $lightPink;
     }
 
     h1 {
       font-size: 20px;
-      color: teal;
       margin-bottom: 20px;
     }
 
@@ -71,7 +75,7 @@ a {
     }
   }
 
-//NAVBAR
+  //NAVBAR --------------------------------------------------------
 
   .navbar {
     .container {
@@ -82,9 +86,10 @@ a {
 
       .logo {
         img {
-          width: 160px;
+          width: 120px;
         }
       }
+
       .links {
         display: flex;
         align-items: center;
@@ -100,7 +105,7 @@ a {
         }
 
         .write {
-          background-color: $lightGreen;
+          background-color: $lightPink;
           width: 50px;
           height: 50px;
           border-radius: 50%;
@@ -122,18 +127,66 @@ a {
     }
   }
 
-//Footer
+  //FOOTER ----------------------------------------------------------------
 
   footer {
     margin-top: 100px;
-    padding: 5px;
-    background-color: $lightGreen;
+    padding: 10px 20px;
+    background-color: $lightPink;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
+
     img {
       height: 80px;
+    }
+  }
+
+  //HOME ----------------------------------------------------------------
+
+  .home {
+
+    .posts {
+      margin-top: 50px;
+      display: flex;
+      flex-direction: column;
+      gap: 150px;
+
+      .post {
+        display: flex;
+        gap: 100px;
+
+        &:nth-child(2n+1) {
+          flex-direction: row-reverse;
+        }
+
+        .img {
+          flex: 2;
+          position: relative;
+
+          &::after {
+            content: ""; //puts the content under all the images (parent)
+            width: 100%;
+            height: 100%;
+            background-color: $lightPink;
+            position: absolute;
+            top: 20px;
+            left: -20px;
+            z-index: -1;
+          }
+
+          img {
+            width: 100%; //100% of the parent which is .img class flex:1
+            max-height: 400px;
+            object-fit: cover;
+          }
+        }
+
+        .content {
+          flex: 3;
+        }
+      }
     }
   }
 }
