@@ -224,6 +224,9 @@ a {
 
     .content {
       flex: 5;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
 
       img {
         width: 100%;
@@ -263,6 +266,11 @@ a {
         h1 {
           font-size: 42px;
           color: #333;
+        }
+
+        p {
+          text-align: justify;
+          line-height: 30px;
         }
 
     }
