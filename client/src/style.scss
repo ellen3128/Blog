@@ -318,22 +318,21 @@ a {
       }
     }
   }
-    //WRITE ----------------------------------------------------------------
-    .add {
-      margin-top: 20px;
+  //WRITE ----------------------------------------------------------------
+  .add {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+
+    .content {
+      flex: 5;
+    }
+
+    .menu {
+      flex: 2;
       display: flex;
+      flex-direction: column;
       gap: 20px;
-
-      .content {
-        flex: 5;
-      }
-
-      .menu {
-        flex: 2;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-      }
     }
-    }
-  
+  }
+}

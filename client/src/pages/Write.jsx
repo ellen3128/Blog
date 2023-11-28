@@ -19,14 +19,23 @@ const Write = () => {
         <div className="item">
           <h1>Publish</h1>
           <span>
-            <b>Status: </b> Draft
+            <b>Status: </b> Draft 
           </span>
           <span>
             <b>Visibility: </b> Public
           </span>
-          <input type="file" name="" id="" />
+          <input style={{display:"none"}} type="file" id="file" />
+          <label htmlFor="file">Upload Image</label>
+          <div className="buttons">
+            <button> Save as a draft</button>
+            <button> Update </button>
+          </div>
         </div>
-        <div className="item">item2</div>
+        <div className="item">
+          <h1>Category</h1>
+          <input type='radio' name="cat" value="art" id="art" />
+          <label htmlFor="art">Art</label>
+        </div>
       </div>
     </div>
   )
