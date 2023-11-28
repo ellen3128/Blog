@@ -12,7 +12,7 @@ const Write = () => {
       <div className="content">
         <input type="text" placeholder='Title' />
         <div className="editorContainer">
-        <ReactQuill theme="snow" value={value} onChange={setValue} />
+        <ReactQuill className="editor" theme="snow" value={value} onChange={setValue} />
         </div>
       </div>
       <div className="menu">
@@ -35,6 +35,16 @@ const Write = () => {
           <h1>Category</h1>
           <input type='radio' name="cat" value="art" id="art" />
           <label htmlFor="art">Art</label>
+          <input type='radio' name="cat" value="science" id="science" />
+          <label htmlFor="art">Science</label>
+          <input type='radio' name="cat" value="technology" id="technology" />
+          <label htmlFor="art">Technology</label>
+          <input type='radio' name="cat" value="cinema" id="cinema" />
+          <label htmlFor="cinema">Cinema</label>
+          <input type='radio' name="cat" value="design" id="design" />
+          <label htmlFor="design">Design</label>
+          <input type='radio' name="cat" value="food" id="food" />
+          <label htmlFor="food">Food</label>
         </div>
       </div>
     </div>
