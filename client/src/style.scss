@@ -263,16 +263,15 @@ a {
         }
       }
 
-        h1 {
-          font-size: 42px;
-          color: #333;
-        }
+      h1 {
+        font-size: 42px;
+        color: #333;
+      }
 
-        p {
-          text-align: justify;
-          line-height: 30px;
-        }
-
+      p {
+        text-align: justify;
+        line-height: 30px;
+      }
     }
 
     .menu {
@@ -316,6 +315,25 @@ a {
             color: black;
           }
         }
+      }
+    }
+
+    //WRITE ----------------------------------------------------------------
+
+    .add {
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+
+      .content {
+        flex: 5;
+      }
+
+      .menu {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
     }
   }
