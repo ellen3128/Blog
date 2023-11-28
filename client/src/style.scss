@@ -16,7 +16,7 @@ a {
   display: flex;
   justify-content: center;
 
-  .container {
+  .content {
     width: 1024px;
 
     //LOGIN & REGISTER ----------------------------------------------------------------
@@ -317,9 +317,8 @@ a {
         }
       }
     }
-
+  }
     //WRITE ----------------------------------------------------------------
-
     .add {
       margin-top: 20px;
       display: flex;
@@ -336,5 +335,5 @@ a {
         gap: 20px;
       }
     }
-  }
-}
+    }
+  

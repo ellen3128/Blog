@@ -16,7 +16,16 @@ const Write = () => {
         </div>
       </div>
       <div className="menu">
-        <div className="item">item1</div>
+        <div className="item">
+          <h1>Publish</h1>
+          <span>
+            <b>Status: </b> Draft
+          </span>
+          <span>
+            <b>Visibility: </b> Public
+          </span>
+          <input type="file" name="" id="" />
+        </div>
         <div className="item">item2</div>
       </div>
     </div>
