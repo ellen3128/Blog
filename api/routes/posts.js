@@ -1,5 +1,5 @@
 import express from "express";
-import { addPost } from "../controllers/post.js"; 
+// import { addPost } from "../controllers/post.js"; 
 
 const router = express.Router() 
 
@@ -7,6 +7,6 @@ const router = express.Router()
 //     res.json("this is post")
 // })
 
-router.get("/test", addPost)
+// router.get("/test", addPost)
 
 export default router;
