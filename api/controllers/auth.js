@@ -1,4 +1,5 @@
 import { db } from "../db.js";
+import bcrypt from 'bcryptjs';
 
 export const register = (req, res) => {
   // Check existing user
