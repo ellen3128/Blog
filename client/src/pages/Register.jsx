@@ -10,6 +10,8 @@ const Register = () => {
     password: "",
   }) 
 
+  const [err, setError] = useState(null)
+
   const handleChange = e => {
     setInputs(prev => ({...prev, [e.target.name]: e.target.value}))
   }
@@ -22,7 +24,8 @@ const Register = () => {
     const res = await axios.post("http://localhost:8800/api/auth/register", inputs)
     console.log(res)
     } catch (err) {
-      console.log(err)
+      // console.log(err)
+      setError(err.response.data)
     }
   }
 
